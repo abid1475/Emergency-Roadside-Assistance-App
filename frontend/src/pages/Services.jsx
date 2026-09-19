@@ -14,7 +14,7 @@ const Services = () => {
       setLoading(true);
       setError("");
 
-      const response = await axios.get("http://localhost:3000/api/v1/services");
+      const response = await axios.get("https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/services");
 
       console.log("Services Response:", response.data);
 
