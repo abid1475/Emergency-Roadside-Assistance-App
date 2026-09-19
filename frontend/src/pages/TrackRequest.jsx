@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-const ASSISTANCE_API = "http://localhost:3000/api/v1/assistance-requests";
+const ASSISTANCE_API = "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests";
 
 const TrackRequest = () => {
   const { id } = useParams();
