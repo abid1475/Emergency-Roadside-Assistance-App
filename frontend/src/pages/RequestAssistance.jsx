@@ -49,12 +49,12 @@ const RequestAssistance = () => {
 
         // Get selected service
         const serviceResponse = await axios.get(
-          `http://localhost:3000/api/v1/services/${serviceId}`,
+          `https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/services/${serviceId}`,
         );
 
         // Get user's vehicles
         const vehicleResponse = await axios.get(
-          "http://localhost:3000/api/v1/vehicles",
+          "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/vehicles",
           config,
         );
 
