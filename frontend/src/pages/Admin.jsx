@@ -33,7 +33,7 @@ const Admin = () => {
         return;
       }
 
-      const response = await axios.get("http://localhost:3000/api/v1/drivers", {
+      const response = await axios.get("https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/drivers", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
