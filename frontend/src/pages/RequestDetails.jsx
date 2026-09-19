@@ -35,7 +35,7 @@ const RequestDetails = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/api/v1/assistance-requests/${id}`,
+        `https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -126,7 +126,7 @@ const RequestDetails = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:3000/api/v1/assistance-requests/${id}/cancel`,
+        `https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests/${id}/cancel`,
         {
           cancellationReason:
             cancellationReason || "Customer no longer needs assistance.",
