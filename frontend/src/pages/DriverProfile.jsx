@@ -42,7 +42,7 @@ const DriverProfile = () => {
       }
 
       const response = await axios.get(
-        "http://localhost:3000/api/v1/drivers/profile",
+        "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/drivers/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -219,7 +219,7 @@ const DriverProfile = () => {
       }
 
       const response = await axios.put(
-        "http://localhost:3000/api/v1/drivers/profile",
+        "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/drivers/profile",
         {
           name: formData.name,
           phone: formData.phone,
