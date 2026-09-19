@@ -26,7 +26,7 @@ const MyRequests = () => {
       }
 
       const response = await axios.get(
-        "http://localhost:3000/api/v1/assistance-requests/my-requests",
+        "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests/my-requests",
         {
           headers: {
             Authorization: `Bearer ${token}`,
