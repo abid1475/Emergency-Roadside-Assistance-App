@@ -25,7 +25,7 @@ const DriverRequestDetails = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/api/v1/assistance-requests/${id}`,
+        `https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ const DriverRequestDetails = () => {
       setActionLoading(true);
 
       const response = await axios.put(
-        `http://localhost:3000/api/v1/assistance-requests/${id}/status`,
+        `https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests/${id}/status`,
         {
           status,
         },
