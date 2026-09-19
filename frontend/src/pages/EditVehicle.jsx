@@ -32,7 +32,7 @@ const EditVehicle = () => {
 
         // Get all user's vehicles
         const response = await axios.get(
-          "http://localhost:3000/api/v1/vehicles",
+          "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/vehicles",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -106,7 +106,7 @@ const EditVehicle = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:3000/api/v1/vehicles/${id}`,
+        `https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/vehicles/${id}`,
         formData,
         {
           headers: {
