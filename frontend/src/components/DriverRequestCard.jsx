@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3000/api/v1/assistance-requests";
+const API_URL = "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/assistance-requests";
 
 const DriverRequestCard = ({ request, onUpdate }) => {
   const [loading, setLoading] = useState(false);
