@@ -3,8 +3,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import DriverLocationTracking from "../components/DriverLocationTracking";
 
-const DRIVER_API = "http://localhost:3000/api/v1/drivers";
-const DRIVER_REQUEST_API = "http://localhost:3000/api/v1/driver-requests";
+const DRIVER_API = "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/drivers";
+const DRIVER_REQUEST_API = "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/driver-requests";
 
 const DriverDashboard = () => {
   const navigate = useNavigate();
