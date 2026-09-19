@@ -20,7 +20,7 @@ const Vehicles = () => {
       }
 
       const response = await axios.get(
-        "http://localhost:3000/api/v1/vehicles",
+        "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/vehicles",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ const Vehicles = () => {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(`http://localhost:3000/api/v1/vehicles/${vehicleId}`, {
+      await axios.delete(`https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/vehicles/${vehicleId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
