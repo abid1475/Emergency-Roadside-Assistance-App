@@ -42,7 +42,7 @@ const AddVehicle = () => {
       }
 
       const response = await axios.post(
-        "http://localhost:3000/api/v1/vehicles",
+        "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/vehicles",
         formData,
         {
           headers: {
