@@ -35,7 +35,7 @@ const Register = () => {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/register",
+        "https://emergency-roadside-assistance-app-backend.onrender.com/api/v1/auth/register",
         formData,
       );
 
