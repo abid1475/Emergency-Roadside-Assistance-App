@@ -170,7 +170,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/register"
+                to="/"
                 className="ml-1 rounded-lg bg-teal-600 px-5 py-2 text-sm font-bold text-white shadow-lg shadow-teal-900/30 transition hover:bg-teal-700"
               >
                 Register
